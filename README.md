@@ -1,2 +1,2 @@
-# Spekter
- Spekter
+# Spektrel
+ Spektrel
