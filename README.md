@@ -4,7 +4,8 @@
 # API 
 * [x] Create Server
 * [ ] Create GET Methods for each platform
-	* [x] Instagram: User/Post
+	* [x] Soundcloud: User/Track
+	* [ ] Instagram: User/Post
 	* [ ] YouTube: Channel/Video
 	* [ ] Spotify: Artist/Song
 	* [ ] Twitter: User/Tweet
@@ -125,12 +126,3 @@
 	* [ ] Reset with email
 	* [ ] Reset by answering security questions
 * [ ] Testing...
-
-## To deploy everything to the same heroku instance
-
-* [ ] Move the server package.json to the root of the folder
-* [ ] Update start script for server to be a relative path
-* [ ] post-deploy script to server that will build Vue.js
-* [ ] Add a static serve to the server that serves '../client/dist'
-* [ ] Environment variable for DB connection and token secret
-* [ ] Update calls in client from localhost:5000 to be your-app.herokuapp.com
