@@ -5,7 +5,7 @@
 * [x] Create Server
 * [ ] Create GET Methods for each platform
 	* [x] Soundcloud: User/Track
-	* [ ] Instagram: User/Post
+	* [x] Instagram: User/Post
 	* [ ] YouTube: Channel/Video
 	* [ ] Spotify: Artist/Song
 	* [ ] Twitter: User/Tweet
