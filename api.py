@@ -18,18 +18,39 @@ headers = {
 def soundcloudGetUser(username):
     page = requests.get(soundcloudUrl + username, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
+    
     # Bruteforce get all the data from the user's page
-    responseJSON = json.loads(str(soup.find_all('script')[-1]).split("data")[9][2:-13])
-    return responseJSON[0]
+    responseJSON = json.loads(str(soup.find_all('script')[-1]).split("data")[9][2:-13])[0]
+    
+    # Clean up the response to a more simple object
+    result = {
+        "username": responseJSON["username"],
+        "profile_picture": responseJSON["avatar_url"],
+        "followers": responseJSON["followers_count"],
+        "following": responseJSON["followings_count"],
+        "tracks": responseJSON["track_count"],
+    }
+    return result
 
 # Soundcloud Track Router
 @app.route('/soundcloud/track/<path:user>/<path:trackname>')
 def soundcloudGetTrack(user, trackname):
     page = requests.get(soundcloudUrl + user + "/" + trackname, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
+
     # Bruteforce get all the data from the user's page
-    responseJSON = json.loads(str(soup.find_all('script')[-1]).split("\"data\"")[8][1:-13])
-    return responseJSON[0]
+    responseJSON = json.loads(str(soup.find_all('script')[-1]).split("\"data\"")[8][1:-13])[0]
+    # Clean up the response to a more simple object
+    result = {
+        "plays": responseJSON["playback_count"],
+        "likes": responseJSON["likes_count"],
+        "comments": responseJSON["comment_count"],
+        "reposts": responseJSON["reposts_count"],
+        "downloads": responseJSON["download_count"],
+        "cover": responseJSON["artwork_url"],
+        "title": responseJSON["title"],
+    }
+    return result;
 
 # User Instagram Router
 # this some g00d code 💋💋💋💋💋💋💋💋💋💋
@@ -41,7 +62,6 @@ def instagramGetUser(user):
     # Bruteforce get all the data from the user's page
     # theres an error when the user doesnt have more than 12 posts therefore:
     # try for user with less than 12 posts
-
     try: 
         responseJSON = json.loads(str(soup.find_all('script')[3]).split("\"graphql\"")[1][1:].split(",\"toast_content_on_load\"")[0])
     except:
