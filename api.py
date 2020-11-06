@@ -53,7 +53,7 @@ def soundcloudGetTrack(user, trackname):
     return result;
 
 # User Instagram Router
-# this some g00d code 💋💋💋💋💋💋💋💋💋💋
+# this some g00d code 💋💋💋💋💋💋🐕‍🦺🐕‍🦺🐕‍🦺🐕‍🦺🐕‍🦺💋
 @app.route('/instagram/user/<path:user>/')
 def instagramGetUser(user):
     page = requests.get(instagramUrl + user, headers=headers)
@@ -82,4 +82,27 @@ def instagramGetUser(user):
         "media": responseJSON["user"]["edge_owner_to_timeline_media"]["count"],
     }
     return result
+
+
+# instagram post route
+@app.route('/instagram/post/<path:post>')
+def instagramGetPost(post):
+    page = requests.get(instagramUrl + "p/" + post, headers=headers)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    
+    responseJSON = json.loads(str(soup.find_all('script')[4]).split("\"graphql\"")[1][1:].split('"hostname":"www.instagram.com"')[0][0:-4])
+    
+    # Clean up the response to a more simple object
+    result = {
+        "likes": responseJSON["shortcode_media"]["edge_media_preview_like"]["count"],
+        "comments": responseJSON["shortcode_media"]["edge_media_preview_comment"]["count"],
+        "username": responseJSON["shortcode_media"]["owner"]["username"],
+        "image": responseJSON["shortcode_media"]["display_url"],
+    }
+    # if post is a video append views
+    if responseJSON["shortcode_media"]["is_video"]:
+        result["views"] = responseJSON["shortcode_media"]["video_view_count"]
+
+    return result
+
 app.run()
