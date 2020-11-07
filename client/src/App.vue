@@ -8,8 +8,14 @@
           <div class="navicon homeicon"></div>
           <p>Home</p>
         </router-link>
-        <router-link class="navPlace main" to="/about">About</router-link>
-        <router-link class="navPlace main" to="/login">Login</router-link>
+        <router-link class="navPlace main" to="/about">
+          <div class="navicon arrowDown"></div>
+          <p>About</p>
+        </router-link>
+        <router-link class="navPlace main" to="/login">
+          <div class="navicon arrowDown"></div>
+          <p>Login</p>
+        </router-link>
       </div>
       <div class="navCategory">Platforms</div>
       <div class="navPlaces">
