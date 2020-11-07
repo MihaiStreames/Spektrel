@@ -32,6 +32,16 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 1rem 0 1rem 0;
+    transition: 200ms ease;
+}
+
+.navLogo:hover {
+    transform: scale(1.05);
+}
+
+.navLogo:active {
+    transform: scale(1.00);
+
 }
 
 .navCategory {
@@ -87,15 +97,15 @@ a.router-link-active.router-link-exact-active.navPlace {
     position: absolute;
     right: 2rem;
     color: white;
-    background: greenyellow;
+    background: #dd0e61;
     border-radius: 2px;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 700;
     padding: 1px 2px;
     width: fit-content;
     height: fit-content;
     min-width: 22px;
-    color: #242531;
-    box-shadow: 0px 0px 10px greenyellow;
+    box-shadow: 0px 0px 10px #dd0e61;
 }
 
 .navicon {

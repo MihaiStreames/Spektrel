@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <div class="navBackground">
-      <a href="/" class="navLogo"></a>
+      <router-link to="/" class="navLogo"></router-link>
       <div class="navCategory">Navigation</div>
       <div class="navPlaces">
         <router-link class="navPlace" to="/">
