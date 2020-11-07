@@ -25,7 +25,7 @@ body {
 }
 
 .navLogo {
-    height: 40px;
+    min-height: 40px;
     width: inherit;
     background-image: url("logo.png");
     background-position: center;
@@ -94,18 +94,25 @@ a.router-link-active.router-link-exact-active.navPlace {
     width: fit-content;
     height: fit-content;
     min-width: 22px;
-    color: black;
+    color: #242531;
+    box-shadow: 0px 0px 10px greenyellow;
 }
 
-.appicon {
-    width: 20px;
-    height: 20px;
+.navicon {
+    width: 22px;
+    height: auto;
     background-repeat: no-repeat;
     transition: color ease 200ms;
-    transform: translateY(-1px);
     background-color: #686B8D;
     background-repeat: no-repeat;
     mask-repeat: no-repeat;
+}
+
+
+/* Icons for the nav buttons */
+.homeicon {
+    -webkit-mask-image: url(svg/home.svg);
+    mask-image: url(svg/home.svg);
 }
 
 .instagram {
@@ -126,6 +133,36 @@ a.router-link-active.router-link-exact-active.navPlace {
 .youtube {
     -webkit-mask-image: url(svg/youtube.svg);
     mask-image: url(svg/youtube.svg);
+}
+
+.deviantart {
+    -webkit-mask-image: url(svg/deviantart.svg);
+    mask-image: url(svg/deviantart.svg);
+}
+
+.twitch {
+    -webkit-mask-image: url(svg/twitch.svg);
+    mask-image: url(svg/twitch.svg);
+}
+
+.tiktok {
+    -webkit-mask-image: url(svg/tiktok.svg);
+    mask-image: url(svg/tiktok.svg);
+}
+
+.spotify {
+    -webkit-mask-image: url(svg/spotify.svg);
+    mask-image: url(svg/spotify.svg);
+}
+
+.api {
+    -webkit-mask-image: url(svg/api.svg);
+    mask-image: url(svg/api.svg);
+}
+
+.github {
+    -webkit-mask-image: url(svg/github.svg);
+    mask-image: url(svg/github.svg);
 }
 
 /* Home */

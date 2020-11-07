@@ -1,47 +1,71 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../views/Home.vue';
-import About from '../views/About.vue';
-import Login from '../views/Login.vue';
-import Instagram from '../views/Instagram.vue';
-import YouTube from '../views/YouTube.vue';
-import SoundCloud from '../views/SoundCloud.vue';
-import Twitter from '../views/Twitter.vue';
+import home from '../views/Home.vue';
+import about from '../views/About.vue';
+import login from '../views/Login.vue';
+import instagram from '../views/Instagram.vue';
+import youtube from '../views/YouTube.vue';
+import soundcloud from '../views/SoundCloud.vue';
+import twitter from '../views/Twitter.vue';
+import deviantart from '../views/DeviantArt.vue';
+import twitch from '../views/Twitch.vue';
+import tiktok from '../views/TikTok.vue';
+import spotify from '../views/Spotify.vue';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: home,
   },
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: about,
   },
   {
     path: '/login',
     name: 'Login',
-    component: Login,
+    component: login,
   },
   {
     path: '/instagram',
     name: 'Instagram',
-    component: Instagram,
+    component: instagram,
   },
   {
     path: '/youtube',
     name: 'YouTube',
-    component: YouTube,
+    component: youtube,
   },
   {
     path: '/soundcloud',
     name: 'SoundCloud',
-    component: SoundCloud,
+    component: soundcloud,
   },
   {
     path: '/twitter',
     name: 'Twitter',
-    component: Twitter,
+    component: twitter,
+  },
+  {
+    path: '/deviantart',
+    name: 'DeviantArt',
+    component: deviantart,
+  },
+  {
+    path: '/twitch',
+    name: 'Twitch',
+    component: twitch,
+  },
+  {
+    path: '/tiktok',
+    name: 'TikTok',
+    component: tiktok,
+  },
+  {
+    path: '/spotify',
+    name: 'spotify',
+    component: spotify,
   },
 ];
 

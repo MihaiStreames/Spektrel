@@ -8,6 +8,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Instagram',
+  name: 'instagram',
 };
 </script>

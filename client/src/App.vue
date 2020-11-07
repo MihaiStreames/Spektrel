@@ -3,33 +3,63 @@
     <div class="navBackground">
       <a href="/" class="navLogo"></a>
       <div class="navCategory">Navigation</div>
-      <div class="navPlaces" >
-        <router-link class="navPlace main" to="/">Home</router-link>
+      <div class="navPlaces">
+        <router-link class="navPlace" to="/">
+          <div class="navicon homeicon"></div>
+          <p>Home</p>
+        </router-link>
         <router-link class="navPlace main" to="/about">About</router-link>
         <router-link class="navPlace main" to="/login">Login</router-link>
       </div>
       <div class="navCategory">Platforms</div>
-      <div class="navPlaces" >
+      <div class="navPlaces">
         <router-link class="navPlace" to="/instagram">
-          <div class="appicon instagram"></div>
+          <div class="navicon instagram"></div>
           <p>Instagram</p>
           <div class="appNotification">106</div>
         </router-link>
         <router-link class="navPlace" to="/soundcloud">
-          <div class="appicon soundcloud"></div>
+          <div class="navicon soundcloud"></div>
           <p>SoundCloud</p>
           <div class="appNotification">36</div>
         </router-link>
         <router-link class="navPlace" to="/twitter">
-          <div class="appicon twitter"></div>
+          <div class="navicon twitter"></div>
           <p>Twitter</p>
           <div class="appNotification">20</div>
         </router-link>
         <router-link class="navPlace" to="/youtube">
-          <div class="appicon youtube"></div>
+          <div class="navicon youtube"></div>
           <p>YouTube</p>
           <div class="appNotification">23</div>
         </router-link>
+        <router-link class="navPlace" to="/deviantart">
+          <div class="navicon deviantart"></div>
+          <p>DeviantArt</p>
+        </router-link>
+        <router-link class="navPlace" to="/twitch">
+          <div class="navicon twitch"></div>
+          <p>Twitch</p>
+        </router-link>
+        <router-link class="navPlace" to="/tiktok">
+          <div class="navicon tiktok"></div>
+          <p>TikTok</p>
+        </router-link>
+        <router-link class="navPlace" to="/spotify">
+          <div class="navicon spotify"></div>
+          <p>Spotify</p>
+        </router-link>
+      </div>
+      <div class="navCategory">Developers</div>
+      <div class="navPlaces">
+        <router-link class="navPlace" to="/api">
+          <div class="navicon api"></div>
+          <p>API</p>
+        </router-link>
+        <a href="https://github.com/MihaiStreames/Spektrel" class="navPlace" target="_blank">
+          <div class="navicon github"></div>
+          <p>Repository</p>
+        </a>
       </div>
     </div>
   </div>
