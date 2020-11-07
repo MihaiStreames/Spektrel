@@ -104,5 +104,4 @@ def instagramGetPost(post):
         result["views"] = responseJSON["shortcode_media"]["video_view_count"]
 
     return result
-
 app.run()
