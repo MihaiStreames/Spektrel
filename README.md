@@ -1,5 +1,4 @@
-# Spektrel
- Spektrel
+![spektrel](https://cdn.discordapp.com/attachments/550913067517607946/774530816889978910/logo.png)
 
 # API 
 * [x] Create Server
@@ -37,7 +36,8 @@
 * [ ] Create Landing Page
 	* [ ] Link to Sign Up Page
 * [ ] Create Sign Up Page
-	* [ ] Form with: username and password
+* [x] Create Navigation Bar
+ 	* [ ] Form with: username and password
 	* [ ] When form is submitted
 		* [ ] Validate username
 			* [ ] Display errors
