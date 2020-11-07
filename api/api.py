@@ -8,6 +8,7 @@ app.config["DEBUG"] = True
 
 soundcloudUrl = "https://soundcloud.com/"
 instagramUrl = "https://instagram.com/"
+youtubeUrl = "https://youtube.com/"
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36',
@@ -53,7 +54,6 @@ def soundcloudGetTrack(user, trackname):
     return result;
 
 # User Instagram Router
-# this some g00d code 💋💋💋💋💋💋🐕‍🦺🐕‍🦺🐕‍🦺🐕‍🦺🐕‍🦺💋
 @app.route('/instagram/user/<path:user>/')
 def instagramGetUser(user):
     page = requests.get(instagramUrl + user, headers=headers)
@@ -83,8 +83,7 @@ def instagramGetUser(user):
     }
     return result
 
-
-# instagram post route
+# Instagram Post Router
 @app.route('/instagram/post/<path:post>')
 def instagramGetPost(post):
     page = requests.get(instagramUrl + "p/" + post, headers=headers)

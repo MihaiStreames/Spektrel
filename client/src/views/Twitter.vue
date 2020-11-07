@@ -1,8 +1,6 @@
 <template>
   <div class="view">
-    <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
-    </div>
+    <h1>This is Twitter dashboard</h1>
   </div>
 </template>
 
@@ -10,6 +8,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
+  name: 'Twitter',
 };
 </script>

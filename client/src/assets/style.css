@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:#242531;
+}
+
+
+#nav {
+    position: absolute;
+}
+
+.navBackground {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 0 2rem 0 2rem;
+    background: #242531;
+    left: 0;
+    width: 12rem;
+    height: 100vh;
+    position: fixed;
+}
+
+.navLogo {
+    height: 40px;
+    width: inherit;
+    background-image: url("logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 1rem 0 1rem 0;
+}
+
+.navCategory {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #686B8D;
+    user-select: none;
+    margin-top: 20px;
+}
+
+.navPlaces {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.navPlace {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #686B8D;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    transition: color ease 200ms;
+    display: flex;
+    justify-content: space-between;
+}
+
+a.navPlace.main {
+    margin-left: 37px;
+}
+
+.navPlace p {
+    width: 155px;
+    text-align: left;
+}
+
+.navPlace:hover {
+    color: #d0d4ff;
+}
+
+a.router-link-active.router-link-exact-active.navPlace {
+    color: #ffffff;
+}
+
+.appNotification {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 2rem;
+    color: white;
+    background: greenyellow;
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 1px 2px;
+    width: fit-content;
+    height: fit-content;
+    min-width: 22px;
+    color: black;
+}
+
+.appicon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    transition: color ease 200ms;
+    transform: translateY(-1px);
+    background-color: #686B8D;
+    background-repeat: no-repeat;
+    mask-repeat: no-repeat;
+}
+
+.instagram {
+    -webkit-mask-image: url(svg/instagram.svg);
+    mask-image: url(svg/instagram.svg);
+}
+
+.soundcloud {
+    -webkit-mask-image: url(svg/soundcloud.svg);
+    mask-image: url(svg/soundcloud.svg);
+}
+
+.twitter {
+    -webkit-mask-image: url(svg/twitter.svg);
+    mask-image: url(svg/twitter.svg);
+}
+
+.youtube {
+    -webkit-mask-image: url(svg/youtube.svg);
+    mask-image: url(svg/youtube.svg);
+}
+
+/* Home */
+.view {
+    margin-left: calc(12rem + 4rem);
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 8px 0px 0px 0px;
+    height: calc(100vh - 20px);
+}

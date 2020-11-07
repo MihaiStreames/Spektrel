@@ -1,7 +1,7 @@
 <template>
   <div class="view">
     <div class="home">
-      <img alt="Vue logo" src="../assets/logo.png">
+      <p>this is the login page</p>
     </div>
   </div>
 </template>
@@ -10,6 +10,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
+  name: 'Login',
 };
 </script>
