@@ -58,10 +58,10 @@
       </div>
       <div class="navCategory">Developers</div>
       <div class="navPlaces">
-        <router-link class="navPlace" to="/api">
+        <a href="https://github.com/MihaiStreames/Spektrel" class="navPlace" target="_blank">
           <div class="navicon api"></div>
           <p>API</p>
-        </router-link>
+        </a>
         <a href="https://github.com/MihaiStreames/Spektrel" class="navPlace" target="_blank">
           <div class="navicon github"></div>
           <p>Repository</p>

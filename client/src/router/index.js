@@ -16,62 +16,112 @@ const routes = [
     path: '/',
     name: 'Home',
     component: home,
+    meta: {
+      auth: false,
+      title: 'Spektrel | Home',
+    },
   },
   {
     path: '/about',
     name: 'About',
     component: about,
+    meta: {
+      auth: false,
+      title: 'Spektrel | About',
+    },
   },
   {
     path: '/login',
     name: 'Login',
     component: login,
+    meta: {
+      auth: false,
+      title: 'Spektrel | Login',
+    },
   },
   {
     path: '/instagram',
     name: 'Instagram',
     component: instagram,
+    meta: {
+      auth: true,
+      title: 'Spektrel | Instagram',
+    },
   },
   {
     path: '/youtube',
     name: 'YouTube',
     component: youtube,
+    meta: {
+      auth: true,
+      title: 'Spektrel | YouTube',
+    },
   },
   {
     path: '/soundcloud',
     name: 'SoundCloud',
     component: soundcloud,
+    meta: {
+      auth: true,
+      title: 'Spektrel | SoundCloud',
+    },
   },
   {
     path: '/twitter',
     name: 'Twitter',
     component: twitter,
+    meta: {
+      auth: true,
+      title: 'Spektrel | Twitter',
+    },
   },
   {
     path: '/deviantart',
     name: 'DeviantArt',
     component: deviantart,
+    meta: {
+      auth: true,
+      title: 'Spektrel | DevianArt',
+    },
   },
   {
     path: '/twitch',
     name: 'Twitch',
     component: twitch,
+    meta: {
+      auth: true,
+      title: 'Spektrel | Twitch',
+    },
   },
   {
     path: '/tiktok',
     name: 'TikTok',
     component: tiktok,
+    meta: {
+      auth: true,
+      title: 'Spektrel | TikTok',
+    },
   },
   {
     path: '/spotify',
     name: 'spotify',
     component: spotify,
+    meta: {
+      auth: true,
+      title: 'Spektrel | Spotify',
+    },
   },
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+// this sets the tab title to the current page dynamically
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title;
+  next();
 });
 
 export default router;
