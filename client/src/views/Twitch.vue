@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h1>This is Twitch Dashboard</h1>
+    <h1>This is cum Dashboard</h1>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h1>This is Instagram Dashboard</h1>
+    <h1>This is 📸 capture da wanka Dashboard</h1>
   </div>
 </template>
 

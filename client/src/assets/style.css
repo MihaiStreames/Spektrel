@@ -123,7 +123,6 @@ a.router-link-active.router-link-exact-active.navPlace {
 .homeicon {
     -webkit-mask-image: url(svg/home.svg);
     mask-image: url(svg/home.svg);
-    mask-position: center;
 }
 
 .arrowDown {

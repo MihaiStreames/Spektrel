@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h1>This is DeviantArt Dashboard</h1>
+    <h1>This is 💋💋💋💋💋💋💋 Dashboard</h1>
   </div>
 </template>
 

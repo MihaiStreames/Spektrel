@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h1>This is Spotify</h1>
+    <h1>This is ni car</h1>
   </div>
 </template>
 

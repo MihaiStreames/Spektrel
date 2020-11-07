@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <h1>This is TikTok Dashboard</h1>
+    <h1>This is balls Dashboard</h1>
   </div>
 </template>
 
