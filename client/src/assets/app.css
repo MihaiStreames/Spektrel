@@ -39,7 +39,7 @@
 .navLogo {
     min-height: 40px;
     width: inherit;
-    background-image: url("logo.png");
+    background-image: url("logo.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -218,7 +218,7 @@ a.router-link-active.router-link-exact-active.navPlace {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    z-index: 1;
+    z-index: 2;
 }
 .home-logo {
     width: 200px;

@@ -17,9 +17,9 @@
       <div class="home-firstSlideTitle">
         <h1>Social Media Dashboard</h1>
         <p>
-          Spektrel is an open source dashboard inspired by Discord that lets you monitor all the
+          Spektrel is an open source-dashboard inspired by Discord that lets you monitor all the
           statistics on your platforms easily, it gives you the ability to track individual
-          posts and download csv statistics for you to use
+          posts and download CSV statistics for you to use
         </p>
         <div class="home-Buttons">
           <router-link to="/login" class="home-loginButton">Login</router-link>
@@ -41,9 +41,9 @@
         <div class="home-secondSlideTitle">
           <h1>Spektrel lets you quickly check your statistics</h1>
           <p>
-            All your platforms show up on the main navigation letting you quickly
-            switch to them letting you check your latest statistics in
-            real time while also having notifications for each app to quickly
+            All your platforms show up on the main navigation, letting you quickly
+            switch to them to check your latest statistics in
+            real-time, while also having notifications for each app to quickly
             show you your growth before even having to click
           </p>
         </div>

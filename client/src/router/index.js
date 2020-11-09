@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 // main pages
 import home from '../views/Home.vue';
 import about from '../views/About.vue';
+import platforms from '../views/Platforms.vue';
+import signup from '../views/Signup.vue';
 import login from '../views/Login.vue';
 import dashboard from '../views/Dashboard.vue';
 
@@ -37,12 +39,30 @@ const routes = [
     },
   },
   {
+    path: '/platforms',
+    name: 'Platforms',
+    component: platforms,
+    meta: {
+      auth: false,
+      title: 'Spektrel | Platforms',
+    },
+  },
+  {
     path: '/login',
     name: 'Login',
     component: login,
     meta: {
       auth: false,
       title: 'Spektrel | Login',
+    },
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: signup,
+    meta: {
+      auth: false,
+      title: 'Spektrel | Signup',
     },
   },
   {
@@ -59,7 +79,6 @@ const routes = [
         name: 'Dash',
         component: dash,
         meta: {
-          auth: true,
           title: 'Spektrel | Dashboard',
         },
       },
@@ -68,7 +87,6 @@ const routes = [
         name: 'Instagram',
         component: instagram,
         meta: {
-          auth: true,
           title: 'Spektrel | Instagram',
         },
       },
@@ -77,7 +95,6 @@ const routes = [
         name: 'YouTube',
         component: youtube,
         meta: {
-          auth: true,
           title: 'Spektrel | YouTube',
         },
       },
@@ -86,7 +103,6 @@ const routes = [
         name: 'SoundCloud',
         component: soundcloud,
         meta: {
-          auth: true,
           title: 'Spektrel | SoundCloud',
         },
       },
@@ -95,7 +111,6 @@ const routes = [
         name: 'Twitter',
         component: twitter,
         meta: {
-          auth: true,
           title: 'Spektrel | Twitter',
         },
       },
@@ -104,7 +119,6 @@ const routes = [
         name: 'DeviantArt',
         component: deviantart,
         meta: {
-          auth: true,
           title: 'Spektrel | DevianArt',
         },
       },
@@ -113,7 +127,6 @@ const routes = [
         name: 'Twitch',
         component: twitch,
         meta: {
-          auth: true,
           title: 'Spektrel | Twitch',
         },
       },
@@ -122,7 +135,6 @@ const routes = [
         name: 'TikTok',
         component: tiktok,
         meta: {
-          auth: true,
           title: 'Spektrel | TikTok',
         },
       },
@@ -131,7 +143,6 @@ const routes = [
         name: 'spotify',
         component: spotify,
         meta: {
-          auth: true,
           title: 'Spektrel | Spotify',
         },
       },
