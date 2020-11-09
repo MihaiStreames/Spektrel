@@ -223,7 +223,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 .home-logo {
     width: 200px;
     height: 56px;
-    background-color: #10111d;
+    background-color: #00000000;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -269,13 +269,13 @@ a.router-link-active.router-link-exact-active.navPlace {
 }
 
 .home-firstBackground {
-    width: 100vw;
+    width: 100%;
     height: 500px;
     background-color: #10111d;
 }
 
 #particles-js {
-    width: 100vw;
+    width: inherit;
     height: inherit;
 }
 
@@ -283,7 +283,7 @@ a.router-link-active.router-link-exact-active.navPlace {
     position: absolute;
 }
 
-.home-firstSlideTitle h1 {
+.home-firstSlideTitle h1, .home-secondSlideTitle h1{
     font-family: Roboto;
     font-size: 50px;
     font-style: normal;
@@ -294,12 +294,11 @@ a.router-link-active.router-link-exact-active.navPlace {
     color: white;
 }
 
-.home-firstSlideTitle p {
+.home-firstSlideTitle p, .home-secondSlideTitle p {
     margin-top: 16px;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
@@ -339,4 +338,71 @@ a.router-link-active.router-link-exact-active.navPlace {
 
 .home-loginButton:hover, .home-signupButton:hover {
     transform: scale(1.04);
+}
+
+.home-secondBackground {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin: 30px 0px;
+    background: white;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-image: url("../assets/logoFaint.png");
+}
+
+.containBG {
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-60px);
+}
+
+.home-secondBackgroundLogo {
+    height: 24vw;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../assets/logoBlack.svg");
+    opacity: 5%;
+    transform: scale(1.1) translateY(40px);
+}
+
+.home-dashboardScreenshot {
+    height: 440px;
+    width: 320px;
+    min-width: 320px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/dashboardScreenshot.png");
+    border-radius: 30px;
+}
+
+.home-secondSlideContent {
+    padding: 0px 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+}
+
+.home-secondSlideTitle {
+    width: 800px;
+}
+
+.home-secondSlideTitle h1 {
+    font-size: 40px;
+    color: #242531;
+    text-align: right;
+    width: inherit;
+}
+
+.home-secondSlideTitle p {
+    color: #242531;
+    text-align: right;
+    width: inherit;
 }
