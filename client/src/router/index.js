@@ -1,15 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router';
+
+// main pages
 import home from '../views/Home.vue';
 import about from '../views/About.vue';
 import login from '../views/Login.vue';
-import instagram from '../views/Instagram.vue';
-import youtube from '../views/YouTube.vue';
-import soundcloud from '../views/SoundCloud.vue';
-import twitter from '../views/Twitter.vue';
-import deviantart from '../views/DeviantArt.vue';
-import twitch from '../views/Twitch.vue';
-import tiktok from '../views/TikTok.vue';
-import spotify from '../views/Spotify.vue';
+import dashboard from '../views/Dashboard.vue';
+
+// dashboard views
+import dash from '../views/dashboard views/Dash.vue';
+import instagram from '../views/dashboard views/Instagram.vue';
+import youtube from '../views/dashboard views/YouTube.vue';
+import soundcloud from '../views/dashboard views/SoundCloud.vue';
+import twitter from '../views/dashboard views/Twitter.vue';
+import deviantart from '../views/dashboard views/DeviantArt.vue';
+import twitch from '../views/dashboard views/Twitch.vue';
+import tiktok from '../views/dashboard views/TikTok.vue';
+import spotify from '../views/dashboard views/Spotify.vue';
 
 const routes = [
   {
@@ -18,7 +24,7 @@ const routes = [
     component: home,
     meta: {
       auth: false,
-      title: 'Spektrel | Home',
+      title: 'Spektrel',
     },
   },
   {
@@ -40,76 +46,96 @@ const routes = [
     },
   },
   {
-    path: '/instagram',
-    name: 'Instagram',
-    component: instagram,
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: dashboard,
     meta: {
       auth: true,
-      title: 'Spektrel | Instagram',
+      title: 'Spektrel | Dashboard',
     },
-  },
-  {
-    path: '/youtube',
-    name: 'YouTube',
-    component: youtube,
-    meta: {
-      auth: true,
-      title: 'Spektrel | YouTube',
-    },
-  },
-  {
-    path: '/soundcloud',
-    name: 'SoundCloud',
-    component: soundcloud,
-    meta: {
-      auth: true,
-      title: 'Spektrel | SoundCloud',
-    },
-  },
-  {
-    path: '/twitter',
-    name: 'Twitter',
-    component: twitter,
-    meta: {
-      auth: true,
-      title: 'Spektrel | Twitter',
-    },
-  },
-  {
-    path: '/deviantart',
-    name: 'DeviantArt',
-    component: deviantart,
-    meta: {
-      auth: true,
-      title: 'Spektrel | DevianArt',
-    },
-  },
-  {
-    path: '/twitch',
-    name: 'Twitch',
-    component: twitch,
-    meta: {
-      auth: true,
-      title: 'Spektrel | Twitch',
-    },
-  },
-  {
-    path: '/tiktok',
-    name: 'TikTok',
-    component: tiktok,
-    meta: {
-      auth: true,
-      title: 'Spektrel | TikTok',
-    },
-  },
-  {
-    path: '/spotify',
-    name: 'spotify',
-    component: spotify,
-    meta: {
-      auth: true,
-      title: 'Spektrel | Spotify',
-    },
+    children: [
+      {
+        path: '',
+        name: 'Dash',
+        component: dash,
+        meta: {
+          auth: true,
+          title: 'Spektrel | Dashboard',
+        },
+      },
+      {
+        path: 'instagram',
+        name: 'Instagram',
+        component: instagram,
+        meta: {
+          auth: true,
+          title: 'Spektrel | Instagram',
+        },
+      },
+      {
+        path: 'youtube',
+        name: 'YouTube',
+        component: youtube,
+        meta: {
+          auth: true,
+          title: 'Spektrel | YouTube',
+        },
+      },
+      {
+        path: 'soundcloud',
+        name: 'SoundCloud',
+        component: soundcloud,
+        meta: {
+          auth: true,
+          title: 'Spektrel | SoundCloud',
+        },
+      },
+      {
+        path: 'twitter',
+        name: 'Twitter',
+        component: twitter,
+        meta: {
+          auth: true,
+          title: 'Spektrel | Twitter',
+        },
+      },
+      {
+        path: 'deviantart',
+        name: 'DeviantArt',
+        component: deviantart,
+        meta: {
+          auth: true,
+          title: 'Spektrel | DevianArt',
+        },
+      },
+      {
+        path: 'twitch',
+        name: 'Twitch',
+        component: twitch,
+        meta: {
+          auth: true,
+          title: 'Spektrel | Twitch',
+        },
+      },
+      {
+        path: 'tiktok',
+        name: 'TikTok',
+        component: tiktok,
+        meta: {
+          auth: true,
+          title: 'Spektrel | TikTok',
+        },
+      },
+      {
+        path: 'spotify',
+        name: 'spotify',
+        component: spotify,
+        meta: {
+          auth: true,
+          title: 'Spektrel | Spotify',
+        },
+      },
+    ],
   },
 ];
 

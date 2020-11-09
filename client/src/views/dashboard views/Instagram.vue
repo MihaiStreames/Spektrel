@@ -1,5 +1,5 @@
 <template>
-  <div class="view">
+  <div class="dashView">
     <h1>This is 📸 capture da wanka Dashboard</h1>
   </div>
 </template>

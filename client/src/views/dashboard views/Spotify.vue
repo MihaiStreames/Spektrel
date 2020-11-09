@@ -1,6 +1,6 @@
 <template>
-  <div class="view">
-    <h1>This is Twitter dashboard</h1>
+  <div class="dashView">
+    <h1>This is ni car</h1>
   </div>
 </template>
 
@@ -8,6 +8,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'twitter',
+  name: 'Spotify',
 };
 </script>

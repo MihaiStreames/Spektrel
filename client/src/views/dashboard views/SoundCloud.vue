@@ -1,6 +1,6 @@
 <template>
-  <div class="view">
-    <h1>This is cum Dashboard</h1>
+  <div class="dashView">
+    <h1>This is SoundCloud</h1>
   </div>
 </template>
 
@@ -8,6 +8,6 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Twitch',
+  name: 'soundcloud',
 };
 </script>
