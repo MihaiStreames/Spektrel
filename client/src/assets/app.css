@@ -1,6 +1,17 @@
+:root {
+    --darkgray: #242531;
+    --black: #10111d;
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-style: normal;
+    text-decoration: none;
 }
 
 .navContainer::-webkit-scrollbar {
@@ -13,7 +24,7 @@
 .navContainer::-webkit-scrollbar-thumb {
     background-color: #686B8D;
     border-radius: 20px;
-    border: 4px solid #242531;
+    border: 4px solid var(--darkgray);
 }
 
 #app {
@@ -29,7 +40,7 @@
     align-items: left;
     flex-direction: column;
     /* padding: 0 2rem 0 2rem; */
-    background: #242531;
+    background: var(--darkgray);
     left: 0;
     height: 100vh;
     position: absolute;
@@ -40,9 +51,6 @@
     min-height: 40px;
     width: inherit;
     background-image: url("logo.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
     margin: 1rem 2rem 1rem 2rem;
     transition: 200ms ease;
 }
@@ -56,8 +64,7 @@
 }
 
 .navContainer {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     height: calc(100vh - 20px);
 }
 
@@ -69,7 +76,6 @@
     text-transform: uppercase;
     font-size: 11px;
     font-weight: 700;
-    font-family: 'Roboto', sans-serif;
     color: #686B8D;
     user-select: none;
     margin-top: 20px;
@@ -78,7 +84,6 @@
 }
 
 .navPlaces {
-    text-decoration: none;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -86,11 +91,9 @@
 
 .navPlace {
     width: calc(256px - 4rem);
-    text-decoration: none;
     text-transform: capitalize;
     color: #686B8D;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 10px 2rem 10px 2rem;
     transition: color ease 200ms;
@@ -117,7 +120,7 @@ a.router-link-active.router-link-exact-active.navPlace {
     justify-content: center;
     position: relative;
     right: -34px;
-    color: #242531;
+    color: var(--darkgray);
     background: greenyellow;
     border-radius: 2px;
     font-size: 11px;
@@ -132,75 +135,24 @@ a.router-link-active.router-link-exact-active.navPlace {
 .navicon {
     width: 22px;
     height: auto;
-    background-repeat: no-repeat;
     transition: color ease 200ms;
     background-color: #686B8D;
-    background-repeat: no-repeat;
     mask-repeat: no-repeat;
 }
 
-
 /* Icons for the nav buttons */
-.homeicon {
-    -webkit-mask-image: url(svg/home.svg);
-    mask-image: url(svg/home.svg);
-}
-
-.arrowDown {
-    -webkit-mask-image: url(svg/arrowDown.svg);
-    mask-image: url(svg/arrowDown.svg);
-    transform: translateX(5.5px);
-}
-
-.instagram {
-    -webkit-mask-image: url(svg/instagram.svg);
-    mask-image: url(svg/instagram.svg);
-}
-
-.soundcloud {
-    -webkit-mask-image: url(svg/soundcloud.svg);
-    mask-image: url(svg/soundcloud.svg);
-}
-
-.twitter {
-    -webkit-mask-image: url(svg/twitter.svg);
-    mask-image: url(svg/twitter.svg);
-}
-
-.youtube {
-    -webkit-mask-image: url(svg/youtube.svg);
-    mask-image: url(svg/youtube.svg);
-}
-
-.deviantart {
-    -webkit-mask-image: url(svg/deviantart.svg);
-    mask-image: url(svg/deviantart.svg);
-}
-
-.twitch {
-    -webkit-mask-image: url(svg/twitch.svg);
-    mask-image: url(svg/twitch.svg);
-}
-
-.tiktok {
-    -webkit-mask-image: url(svg/tiktok.svg);
-    mask-image: url(svg/tiktok.svg);
-}
-
-.spotify {
-    -webkit-mask-image: url(svg/spotify.svg);
-    mask-image: url(svg/spotify.svg);
-}
-
-.api {
-    -webkit-mask-image: url(svg/api.svg);
-    mask-image: url(svg/api.svg);
-}
-
-.github {
-    -webkit-mask-image: url(svg/github.svg);
-    mask-image: url(svg/github.svg);
-}
+.homeicon { mask-image: url(svg/home.svg); }
+.arrowDown { mask-image: url(svg/arrowDown.svg); transform: translateX(5.5px); }
+.instagram { mask-image: url(svg/instagram.svg); }
+.soundcloud { mask-image: url(svg/soundcloud.svg); }
+.twitter { mask-image: url(svg/twitter.svg); }
+.youtube { mask-image: url(svg/youtube.svg); }
+.deviantart { mask-image: url(svg/deviantart.svg); }
+.twitch { mask-image: url(svg/twitch.svg); }
+.tiktok { mask-image: url(svg/tiktok.svg); }
+.spotify { mask-image: url(svg/spotify.svg); }
+.api { mask-image: url(svg/api.svg); }
+.github { mask-image: url(svg/github.svg); }
 
 .dashView {
     height: 100vh;
@@ -224,9 +176,6 @@ a.router-link-active.router-link-exact-active.navPlace {
     width: 200px;
     height: 56px;
     background-color: #00000000;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
     background-image: url("../assets/logoWhite.png");
     transition: 200ms ease;
 }
@@ -236,10 +185,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 }
 
 .home-headerButtons a{
-    text-decoration: none;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 700;
     line-height: 12px;
     letter-spacing: 0em;
@@ -255,7 +201,7 @@ a.router-link-active.router-link-exact-active.navPlace {
     height: fit-content;
     padding: 10px 20px;
     background: white;
-    color: #141521;
+    color: var(--darkgray);
     border-radius: 30px;
     transition: 200ms ease;
 }
@@ -271,7 +217,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 .home-firstBackground {
     width: 100%;
     height: 500px;
-    background-color: #10111d;
+    background-color: var(--black);
 }
 
 #particles-js {
@@ -284,9 +230,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 }
 
 .home-firstSlideTitle h1, .home-secondSlideTitle h1{
-    font-family: Roboto;
     font-size: 50px;
-    font-style: normal;
     font-weight: 900;
     line-height: 42px;
     letter-spacing: 0em;
@@ -296,9 +240,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 
 .home-firstSlideTitle p, .home-secondSlideTitle p {
     margin-top: 16px;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
@@ -316,22 +258,19 @@ a.router-link-active.router-link-exact-active.navPlace {
     height: fit-content;
     padding: 14px 100px;
     background: white;
-    color: #141521;
+    color: var(--darkgray);
     border-radius: 30px;
-    font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 800;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: center;
-    text-decoration: none;
     margin: 0px 14px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     transition: 100ms ease;
 }
 .home-signupButton {
-    background: #141521;
+    background: var(--darkgray);
     color: white;
     font-weight: 500;
 }
@@ -346,9 +285,7 @@ a.router-link-active.router-link-exact-active.navPlace {
     padding: 30px 0px;
     margin: 30px 0px;
     background: white;
-    background-position: center;
     background-repeat: repeat-x;
-    background-size: contain;
     background-image: url("../assets/logoFaint.png");
 }
 
@@ -363,10 +300,7 @@ a.router-link-active.router-link-exact-active.navPlace {
 .home-secondBackgroundLogo {
     height: 24vw;
     width: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url("../assets/logoBlack.svg");
+    background-image: url("../assets/logo.svg");
     opacity: 5%;
     transform: scale(1.1) translateY(40px);
 }
@@ -375,8 +309,6 @@ a.router-link-active.router-link-exact-active.navPlace {
     height: 440px;
     width: 320px;
     min-width: 320px;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-image: url("../assets/dashboardScreenshot.png");
     border-radius: 30px;
@@ -396,13 +328,13 @@ a.router-link-active.router-link-exact-active.navPlace {
 
 .home-secondSlideTitle h1 {
     font-size: 40px;
-    color: #242531;
+    color: var(--darkgray);
     text-align: right;
     width: inherit;
 }
 
 .home-secondSlideTitle p {
-    color: #242531;
+    color: var(--darkgray);
     text-align: right;
     width: inherit;
 }
