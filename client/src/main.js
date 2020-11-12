@@ -1,7 +1,8 @@
 import { createApp } from 'vue';
 import VueParticles from 'vue-particles';
 import App from './App.vue';
-import router from './router';
+/* eslint-disable-next-line */
+import router from './router.js';
 import store from './store';
 
 createApp(App)

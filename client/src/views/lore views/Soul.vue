@@ -1,10 +1,10 @@
 <template>
-  <div class="about">
+  <div class="soul">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'about',
+  name: 'soul',
 };
 </script>
