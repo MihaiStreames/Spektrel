@@ -8,6 +8,7 @@ app.config["DEBUG"] = True
 
 soundcloudUrl = "https://soundcloud.com/"
 instagramUrl = "https://instagram.com/"
+twitterUrl = "https://twitter.com/"
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36',
@@ -104,4 +105,14 @@ def instagramGetPost(post):
         result["views"] = responseJSON["shortcode_media"]["video_view_count"]
 
     return result
+
+@app.route('/twitter/user/<path:user>')
+def twitterGetUser(user):
+    page = requests.get(twitterUrl + user, headers=headers)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    
+    responseJSON = str(soup.find_all())
+    
+    return responseJSON
+
 app.run()
