@@ -4,18 +4,18 @@
 * [x] Create Server
 * [ ] Create GET Methods for each platform
 	* [x] Soundcloud: User/Track
-	* [x] Instagram: User/Post
+	* [ ] Instagram: User/Post
 	* [ ] YouTube: Channel/Video
 	* [ ] Spotify: Artist/Song
 	* [ ] Twitter: User/Tweet
-* [x] Host API endpoints on a https://api.spektrel.io subdomain
+* [ ] Host API endpoints on a https://api.spektrel.io subdomain
 
 
 # Database 
-* [x] Create Collection for Users
-    * [x] All users = GET /users/
-    * [x] Create user = POST /users/
-        * [x] Encrypt Passwords
+* [ ] Create Collection for Users
+    * [ ] All users = GET /users/
+    * [ ] Create user = POST /users/
+        * [ ] Encrypt Passwords
     * [ ] User's Cards = GET /cards/?query=userId <!-- * (only accesible if signed in and token matches) -->
     * [ ] Create Cards = POST /cards/ <!-- * (only accesible if signed in and token matches) -->
 
@@ -27,16 +27,16 @@
 * [ ] In those collections we keep the userId of the user
 
 # Auth
-* [x] Create Server
-* [x] Create user with POST /users/
-	* [x] validate required fields
-	* [x] Check if username is unique
-	* [x] hash password with bcrypt
-	* [x] insert into db
+* [ ] Create Server
+* [ ] Create user with POST /users/
+	* [ ] validate required fields
+	* [ ] Check if username is unique
+	* [ ] hash password with bcrypt
+	* [ ] insert into db
 * [ ] Create Landing Page
 	* [ ] Link to Sign Up Page
 * [ ] Create Sign Up Page
-* [x] Create Navigation Bar
+* [ ] Create Navigation Bar
  	* [ ] Form with: username and password
 	* [ ] When form is submitted
 		* [ ] Validate username
